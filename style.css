@@ -1,0 +1,201 @@
+/* Overall body styling */
+body {
+    background-color: #f0f4f8; /* Very light gray background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Dark text color for readability */
+  }
+  
+  /* Player container styling */
+  .player {
+    background: #ffffff; /* White background for the player */
+    border-radius: 20px; /* More rounded corners for a modern look */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    padding: 30px;
+    width: 100%;
+    max-width: 480px; /* Slightly narrower for a more compact look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Details section styling */
+  .details {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .track-art {
+    margin: 15px 0;
+    height: 180px;
+    width: 180px;
+    background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Slightly smaller radius */
+    border: 1px solid #e0e0e0; /* Light border */
+  }
+  
+  .now-playing {
+    font-size: 0.8rem;
+    color: #999; /* Very light gray for less prominence */
+  }
+  
+  .track-name {
+    font-size: 2rem;
+    font-weight: 500; /* Medium font weight for balance */
+    color: #222; /* Darker color for better contrast */
+    margin: 8px 0;
+  }
+  
+  .track-artist {
+    font-size: 1.2rem;
+    color: #666; /* Medium gray for artist name */
+  }
+  
+  /* Buttons section styling */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjusted gap between buttons */
+    margin: 20px 0;
+  }
+  
+  .buttons div {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for button effects */
+  }
+  
+  .buttons div:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+  }
+  
+  .buttons i {
+    color: #888; /* Soft gray color for icons */
+    cursor: pointer;
+  }
+  
+  .buttons i:hover {
+    color: #007bff; /* Soft blue color on hover */
+  }
+  
+  /* Slider containers styling */
+  .slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Adjusted gap */
+    margin: 15px 0;
+    width: 100%;
+    max-width: 480px;
+  }
+  
+  /* Time labels */
+  .current-time, .total-duration {
+    font-size: 1rem;
+    color: #777; /* Light gray for labels */
+  }
+  
+  /* Seek slider styling */
+  .seek_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #007bff; /* Light blue color for the slider */
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 65%; /* Slightly narrower slider */
+  }
+  
+  .seek_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 2px solid #007bff; /* Light blue border for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .seek_slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 2px solid #007bff; /* Light blue border for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .seek_slider::-ms-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 2px solid #007bff; /* Light blue border for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Volume control section */
+  .volume_control {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f8f9fa; /* Light gray background for volume control */
+    border-radius: 10px; /* Rounded corners for the volume control */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the volume control */
+  }
+  
+  /* Volume icon styling */
+  .volume_control i {
+    font-size: 1.5rem; /* Larger icon size for better visibility */
+    color: #555; /* Gray color for the volume icons */
+  }
+  
+  /* Volume slider styling */
+  .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 6px;
+    background: #007bff; /* Light blue color for the slider */
+    border-radius: 5px;
+    margin: 0 15px;
+    width: 100%; /* Full width for the volume slider */
+  }
+  
+  .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #007bff; /* Light blue border for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .volume_slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #007bff; /* Light blue border for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .volume_slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 2px solid #007bff; /* Light blue border for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
